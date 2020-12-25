@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Times New Roman;
+  
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  margin:2%;
+  width:90%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+img {
+ border: 1px solid black;
+ padding: 10px;
+ height: 60%;
+ width: 60%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width:100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Account Setting</h2>
+<p>Account Setting / Dashboard</p>
+<div class="container">
+  <form action="/action_page.php">
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="fname"><b>First Name</b></label>
+      </div>
+
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname"><b>Last Name</b></label>
+      </div>
+
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+
+   <div class="row">
+      <div class="col-25">
+        <label for="Uname"><b>Username</b></label>
+      </div>
+
+      <div class="col-75">
+        <input type="text" id="Uname" name="username" placeholder="Enter Username..">
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-25">
+        <label for="Email"><b>Email</b></label>
+      </div>
+
+      <div class="col-75">
+        <input type="text" id="Email" name="email" placeholder="Your Email..">
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-25">
+        <label for="NewPassword"><b>New Password</b></label>
+      </div>
+
+      <div class="col-75">
+        <input type="password" value="" id="myInput" placeholder="Enter New password...."><br>
+	<input type="checkbox" onclick="myFunction()" >Show Password<br>
+      </div>
+    </div>
+
+       <div class="row">
+      <div class="col-25">
+        <label for="profilepic"><b>Profile Picture</b></label>
+      </div>
+
+      <div class="col-75"><br>
+        <input type="file" id="profilepic" name="profile" >
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-25">
+      </div>
+
+      <div class="col-75"><br>
+        <img src="1.jpeg"/>
+      </div>
+    </div>
+ 
+  <div class="row">
+   <div class="col-25">
+   </div>
+    <div class="col-75"><br>
+        <input type="password" value="" id="myInputs" placeholder="Enter current password...."><br>
+	<input type="checkbox" onclick="myFunction1()" >Show Current Password
+      </div>
+    </div>
+
+   <div class="row">
+      <input type="submit" value="Update"> ((Can change to button))
+    </div>
+    
+  </form>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function myFunction1() {
+  var y = document.getElementById("myInputs");
+  if (y.type === "password") {
+    y.type = "text";
+  } else {
+    y.type = "password";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> X-Trade Registration Page </title>
+		<style>
+			.button {
+  			background-color: #4CAF50; /* Green */
+ 			border: none;
+  			color: white;
+ 			padding: 16px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 1.2em;
+  			margin: 4px 2px;
+  			transition-duration: 0.4s;
+  			cursor: pointer;
+			}
+			
+			.button4 {
+ 			background-color: white;
+  			color: #3369FF;
+ 			border: 2px solid #3369FF;
+			margin-left:35%;
+			margin-top:2%;
+			margin-bottom:5%;
+			}
+
+			.button4:hover {background-color: #C7F9FF;}
+			
+			body{
+			background-color:#F5D9BB; 
+			margin:0px;
+			font-family: Times New Roman;
+			}
+			
+			input{
+			width:250px;	
+			}
+			
+			
+		</style>
+	</head>
+	
+	<body>
+	
+		
+			<div style="padding:10px;">
+					
+				<div style="color:black; float:center; padding:10px;">
+				 	<div style="font-size: 2.0em; margin:6px; font-weight:900; text-align:center;">
+						<b>REGISTER HERE</b>
+					</div>
+					
+				</div>
+			</div>
+
+			<div style="margin:25px auto; width:400px; border:2px solid #3369FF; ">
+				
+			
+				<div style="margin:0px; padding:6px; text-align:center; font-weight:900; font-size:2.2em; border-bottom:2px solid #3369FF; background-color:#C7F9FF; color:#3369FF; ">
+				Sign Up
+				</div>
+			
+					
+					<div style="margin:5%; font-size:1.2em; color:#3369FF; background-color:#ffa500; padding:10px; border:1px solid #3369FF;">
+						
+						<div style="margin:8px; padding-left:2%;">
+							<div style="display:inline-block; width:6em;"><b>Username:</b></div> 
+								<input type="text"; placeholder="Enter username...";  id="username" name="username" required/>
+						</div>
+						
+						<div style="margin:8px; padding-left:2%;">
+							<div style="display:inline-block; width:6em;"><b>Student ID:</b></div> 
+								<input type="text"; placeholder="Enter your student ID..."; "id="studentID" name="studentID" required/>
+						</div>
+
+						<div style="margin:8px; padding-left:2%;">
+							<div style="display:inline-block; width:6em;"><b>Password:</b></div> 
+								<input type="password" value="" id="myInput" placeholder="Enter password...." name="password" required><br>
+									<input type="checkbox" onclick="myFunction()" style="width:4%;" >Show Password<br>
+						</div>
+						
+						<div style="margin:8px; padding-left:2%;">
+							<div style="display:inline-block; width:10em;"><b>Confirm Password:</b></div> 
+								<input type="password" value="" id="myInputs" placeholder="Enter confirm password...." name="confirmpassword" required><br>
+									<input type="checkbox" onclick="myFunction1()" style="width:4%;" >Show Password<br>
+						</div>
+						
+						<div style="margin:8px; padding-left:2%;">
+							<div style="display:inline-block; width:6em;"><b>Email:</b></div> 
+								<input type="text"; placeholder="Enter Your Email...";" id="email" name="email" required/>
+						</div>
+						
+						<div style="margin:8px; padding-left:2%;">
+							<div style="display:inline-block; width:6em;"><b>Gender:</b></div>  
+								<select style ="width:200px; height:30px; text-align:center; margin-right:300%;" id="gender" name="gender" required> 
+									<option value="Male">Male</option> 
+									<option value="Female">Female</option> </select>
+						</div>
+						
+					</div>
+						<button class="button button4" onclick="location.href='Login.html';">Submit</button>
+						
+			<script>
+				function myFunction() {
+  				var x = document.getElementById("myInput");
+  				if (x.type === "password") {
+    				x.type = "text";
+  				} else {
+   				x.type = "password";
+  				}
+				}
+
+				function myFunction1() {
+  				var y = document.getElementById("myInputs");
+  				if (y.type === "password") {
+  				y.type = "text";
+  				} else {
+    				y.type = "password";
+  				}
+				}
+			</script>
+			
+			</div>
+			
+					
+			<div style="position:fixed; bottom:0px; width:100%; line-height:30px; margin-top:25px; text-align:Center; background-color:black; padding:15px; color:white">
+				Copyright 2017 - 2020, Xiamen University <br/>
+				Bookman Development Team
+			</div>	
+	</body>	
+</html>
