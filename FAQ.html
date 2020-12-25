@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frequent Ask Questions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #001080;
+  color: #FF7F50;
+  cursor: pointer;
+  padding: 20px;
+  width: 70%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+  margin: auto;
+  transition: 0.4s;
+  line-height: 1.6;
+}
+
+.active, .accordion:hover {
+  background-color: #286086;
+}
+
+.panel {
+  
+ 
+background-color: pink;
+  width: 70%;
+  max-height: 0;
+  line-height: 1.6;
+  font-size: 20px;
+  font-family:TimesNewRoman;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body style="background-color:#F5D9BB; margin:0px;">
+
+
+	<h2 style="text-align:center; line-height: 1.6;">Frequent Ask Questions </h2>
+	<p style="text-align:center; font-size: 22px;">Frequent Ask Questions Regarding X-Trade</p>
+
+<div style="margin-left:25%;  padding:50px; ">	
+	<button class="accordion">What can X-Trade do?</button>
+	<div class="panel">
+  		<p style="line-height: 1.6; padding:3%;"> X-Trade is an online trading platform which allows all Xiamen University's staffs and student to trade their products.</p>
+	</div>
+
+	<button class="accordion">How could I become a Member of X-Trade?</button>
+		<div class="panel">
+  			<p style="line-height: 1.6; padding:20px;" > Membership of X-Trade is exclusive for students and staffs of Xiamen University and Xiamen University Malaysia.  If you are one of them, you can sign-up and become a membership of X-Trade.</p>
+		</div>
+
+	<button class="accordion">What can a member of X-Trade do ?</button>
+		<div class="panel">
+  			<p style="line-height: 1.6; padding:20px;"> After being a member of X-Trade, you are able to upload your product to X-Trade. After being approved by our officer, you product will be uploaded to the product page and view by others. You can start trading after that. YAY! </p>
+		</div>
+	</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

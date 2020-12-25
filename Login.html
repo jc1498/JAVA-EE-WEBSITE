@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> X-Trade Registration Page </title>
+		<style>
+		
+			.button {
+ 			 border: none;
+ 			 color: white;
+ 			 padding: 5px 10px;
+  			 text-align: center;
+  			 text-decoration: none;
+  			 display: inline-block;
+  			 font-size: 0.8em;
+  			 margin: 2px; 4px;
+  			 transition-duration: 0.4s;
+  			 cursor: pointer;
+			
+			}
+
+			.button1 {
+  			background-color: white; 
+  			color: black;
+ 			border: 2px solid #4CAF50;
+			
+			}
+
+			.button1:hover {
+ 			 background-color: #4CAF50;
+ 			 color: white;
+			}
+
+			.button2 {
+  			background-color: white; 
+ 			color: black; 
+ 			border: 2px solid #008CBA;
+			}
+
+			.button2:hover {
+ 			 background-color: #008CBA;
+  			color: white;
+			}
+			
+			body{
+			font-family: Times New Roman;
+			margin:0px;
+			background-color:#F5D9BB;
+			}
+			
+			input{
+			width:250px;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+		
+			
+			<div style="padding:10px;">
+					
+				<div style="color:black; float:center; padding:10px;">
+				 	<div style="font-size: 2.0em; margin:6px; font-weight:900; text-align:center; font-family:Times New Roman;">
+						<b>Login</b>
+					</div>
+					
+				</div>
+			</div>
+
+			<div style="margin:25px auto; width:400px; border:2px solid #3369FF; ">
+				
+			
+				<div style="margin:0px; padding:6px; text-align:center; font-weight:900; font-size:2.2em; border-bottom:2px solid #3369FF; background-color:#C7F9FF; color:#3369FF; ">
+				Log in
+				</div>
+			
+					
+					<div style="margin:20px; 35px; 10px; 35px; font-size:1.4em; color:#3369FF; background-color:#ffa500; padding:10px; border:1px solid #3369FF;">
+
+						<div style="margin:8px; padding-left:2%;">
+							<div style="display:inline-block; width:6em;"><b>Student ID:</b></div> 
+								<input type="text"; placeholder="Enter your student ID..."; "id="studentID" name="studentID" required/>
+						</div>
+						<div style="margin:8px; padding-left:2%;">
+							<div style="display:inline-block; width:6em;"><b>Password:</b></div> 
+								<input type="password" value="" id="myInput" placeholder="Enter password...." id="password" name="password" required><br>
+									<input type="checkbox" onclick="myFunction()" style="width:4%;" >Show Password<br>
+						</div>
+
+						<div style ="margin-left:5%; width:250px; display:flex; justify-content:center; height:45px; padding-top:10px;">
+
+							<button class="button button1" >Login</button>
+
+						<div style="font-size:0.8em; padding:15px;  "> OR </div>
+							<button class="button button2" onclick="location.href='Registration.html'">Sign Up</button>
+
+						</div>
+				        </div>
+			<script>
+				function myFunction() {
+  				var x = document.getElementById("myInput");
+  				if (x.type === "password") {
+    				x.type = "text";
+  				} else {
+   				x.type = "password";
+  				}
+				}
+			</script>
+
+					
+			</div>
+			<div style="position:fixed; bottom:0px; width:100%; line-height:30px; margin-top:25px; text-align:Center; background-color:black; padding:15px; color:white">
+				Copyright 2017 - 2020, Xiamen University <br/>
+				Bookman Development Team
+			</div>		
+	</body>	
+</html>
