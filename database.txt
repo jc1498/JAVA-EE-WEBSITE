@@ -1,0 +1,17 @@
+CREATE TABLE `product`.`product` (
+  `product_id` INT NOT NULL,
+  `product_name` VARCHAR(45) NOT NULL,
+  `product_category` VARCHAR(45) NOT NULL,
+  `product_date` DATETIME NOT NULL,
+  `product_description` LONGTEXT NOT NULL,
+  `product_pic` LONGBLOB NOT NULL,
+  `price` DOUBLE NOT NULL,
+  PRIMARY KEY (`product_id`));
+
+INSERT INTO `product`.`product` (`product_id`, `product_name`, `price`, `product_category`, `product_date`, `product_description`, `product_pic`) VALUES ('01', 'Ram Hoodies', '59.00', 'Clothes', '2020-12-27', 'Ram Hoodies which just brought two monthss ago', ?);
+INSERT INTO `product`.`product` (`product_id`, `product_name`, `price`, `product_category`, `product_date`, `product_description`, `product_pic`) VALUES ('02', 'Cooker', '159.00', 'Household Appliances', '2020-12-27', 'A multicooker which is still new but I don\'t use it frequently', ?);
+INSERT INTO `product`.`product` (`product_id`, `product_name`, `price`, `product_category`, `product_date`, `product_description`, `product_pic`) VALUES ('03', 'Guitar', '159.00', 'Others', '2020-12-27', 'Guitar consists of a hollow wooden body with six strings stretched over it and along a narrow neck.', ?);
+INSERT INTO `product`.`product` (`product_id`, `product_name`, `price`, `product_category`, `product_date`, `product_description`, `product_pic`) VALUES ('04', 'Dumpling', '19.00', 'Food&Beverages', '2020-12-28', 'Dumpling consists of prawn', ?);
+INSERT INTO `product`.`product` (`product_id`, `product_name`, `price`, `product_category`, `product_date`, `product_description`, `product_pic`) VALUES ('05', 'Headset', '209.00', 'Others', '2020-12-28', 'Headset', ?);
+INSERT INTO `product`.`product` (`product_id`, `product_name`, `price`, `product_category`, `product_date`, `product_description`, `product_pic`) VALUES ('06', 'Badminton Racquet', '259.00', 'Others', '2020-12-28', 'Yonex Badminton Racquet', ?);
+INSERT INTO `product`.`product` (`product_id`, `product_name`, `price`, `product_category`, `product_date`, `product_description`, `product_pic`) VALUES ('07', 'Introduction to Software Engineering', '159.00', 'Books&Stationery', '2020-12-29', 'A book which can used by Software Engineering from first year to last year', ?);
